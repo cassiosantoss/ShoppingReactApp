@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { HashRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
 import ShoppingCart from "./pages/ShoppingCart";
 import Nav from "./components/Nav";
@@ -62,7 +62,7 @@ class App extends Component {
     const nav = <Nav itens={this.state.myCart} />;
 
     return (
-      <HashRouter>
+      <BrowserRouter>
         <React.Fragment>
           <Switch>
             <Route
@@ -105,7 +105,7 @@ class App extends Component {
             />
           </Switch>
         </React.Fragment>
-      </HashRouter>
+      </BrowserRouter>
     );
   }
 }

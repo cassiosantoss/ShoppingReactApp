@@ -50,35 +50,43 @@ class Home extends Component {
             <div className="container">
               <div className="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
                 <hr />
-                {this.state.productsFromSearch.map(product => (
-                  <Product
-                    key={product.id}
-                    name={product.name}
-                    imageName={product.imageName}
-                    price={product.price}
-                    inCart={
-                      this.props.myCart.filter(item => item.id === product.id)
-                        .length > 0
-                        ? true
-                        : false
-                    }
-                    handleAddToCart={() =>
-                      this.props.handleAddToCart(product.id)
-                    }
-                    handleRemove={() => this.props.handleRemove(product.id)}
-                  />
-                ))}
+                {this.state.productsFromSearch.length > 0 ? (
+                  this.state.productsFromSearch.map(product => (
+                    <Product
+                      key={product.id}
+                      name={product.name}
+                      imageName={product.imageName}
+                      price={product.price}
+                      inCart={
+                        this.props.myCart.filter(item => item.id === product.id)
+                          .length > 0
+                          ? true
+                          : false
+                      }
+                      handleAddToCart={() =>
+                        this.props.handleAddToCart(product.id)
+                      }
+                      handleRemove={() => this.props.handleRemove(product.id)}
+                    />
+                  ))
+                ) : (
+                  <h4 className="alert alert-info">
+                    Sorry, we could not find any items. Try again.
+                  </h4>
+                )}
               </div>
             </div>
           </div>
         </div>
-        <div className="well text-center">
-          Powerd by
-          {"  "}
-          <a href="https://github.com/cassiosantoss" title="">
-            CSS
-          </a>
-        </div>
+        <footer>
+          <div className="well text-center">
+            Powerd by
+            {"  "}
+            <a href="https://github.com/cassiosantoss" title="">
+              CSS
+            </a>
+          </div>
+        </footer>
       </React.Fragment>
     );
   }

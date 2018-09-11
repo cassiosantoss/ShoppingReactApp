@@ -107,3 +107,7 @@ button {
   border: 1px solid #eee;
   text-align: center;
 }
+
+footer {
+  margin-top: 300px;
+}
