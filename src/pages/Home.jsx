@@ -82,7 +82,7 @@ class Home extends Component {
           <div className="well text-center">
             Powerd by
             {"  "}
-            <a href="https://github.com/cassiosantoss" title="">
+            <a href="#" title="">
               CSS
             </a>
           </div>
