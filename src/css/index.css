@@ -1,113 +1,116 @@
 body {
-  margin: 0;
-  padding: 0;
-  height: max-content;
+    margin: 0;
+    padding: 0;
+    height: max-content;
 }
 ::placeholder {
-  color: #ccc;
-  font-weight: normal;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 13px;
+    color: #ccc;
+    font-weight: normal;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 13px;
 }
 
 .pull-right {
-  cursor: pointer;
-  font-size: 18px;
-  margin-right: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 30px;
+}
+.panel {
+    box-shadow: 0px 2px 2px 0px #c3c3c3;
 }
 
 .counter {
-  z-index: 2;
-  margin-left: 8px;
-  margin-top: -5px;
-  position: absolute;
-  display: block;
-  font-size: 10px;
-  font-weight: 700;
-  border-radius: 50%;
-  color: white;
-  background-color: #c22929;
-  height: 13px;
-  width: 13px !important;
-  text-align: center;
+    z-index: 2;
+    margin-left: 8px;
+    margin-top: -5px;
+    position: absolute;
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 50%;
+    color: white;
+    background-color: #c22929;
+    height: 13px;
+    width: 13px !important;
+    text-align: center;
 }
 
 form {
-  padding: 20px;
+    padding: 20px;
 }
 
 .main {
-  margin-top: 60px;
-  overflow: hidden;
+    margin-top: 60px;
+    overflow: hidden;
 }
 
 .product {
-  border: 1px solid #eee;
-  height: 300px;
-  padding: 10px;
-  margin-bottom: 20px;
+    border: 1px solid #eee;
+    height: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
 .product-image {
-  text-align: center !important;
-  padding: 40px !important;
-  box-sizing: border-box;
-  width: 100%;
-  height: 200px;
-  color: #8d8d8d;
-  background-color: #e4e4e4 !important;
+    text-align: center !important;
+    padding: 40px !important;
+    box-sizing: border-box;
+    width: 100%;
+    height: 200px;
+    color: #8d8d8d;
+    background-color: #e4e4e4 !important;
 }
 
 .product-name {
-  float: left;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 12px;
-  margin: 10px;
-  color: #3490c5;
+    float: left;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 12px;
+    margin: 10px;
+    color: #3490c5;
 }
 
 .product-price {
-  float: right;
-  margin: 10px;
+    float: right;
+    margin: 10px;
 }
 
 .product button {
-  float: right;
-  clear: right;
+    float: right;
+    clear: right;
 }
 
 .well {
-  margin-top: 60px;
-  padding: 70px;
+    margin-top: 60px;
+    padding: 70px;
 }
 
 button {
-  outline: none !important;
+    outline: none !important;
 }
 .panel {
-  padding: 5px;
+    padding: 5px;
 }
 
 .total {
-  margin: 10px;
+    margin: 10px;
 }
 
 .item-change-amount {
-  margin: 20px;
+    margin: 20px;
 }
 
 .amount {
-  outline: none;
-  font-weight: 200;
-  font-size: 15px;
-  width: 50px;
-  height: 50px;
-  border: 1px solid #eee;
-  text-align: center;
+    outline: none;
+    font-weight: 200;
+    font-size: 15px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #eee;
+    text-align: center;
 }
 
 footer {
-  margin-top: 300px;
+    margin-top: 300px;
 }
